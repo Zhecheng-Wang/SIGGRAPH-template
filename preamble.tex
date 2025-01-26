@@ -1,15 +1,29 @@
 \usepackage{bm}
 \usepackage{amsmath}
 \usepackage{booktabs}
-\usepackage[table,x11names,dvipsnames,table]{xcolor}
-\usepackage{graphicx}
 \usepackage{tikzducks}
 \usepackage{adjustbox}
 \usepackage{duckuments}
+\usepackage[abs]{overpic}
+\usepackage{nicefrac}
+\usepackage{wrapfig}
+\usepackage{soul}
+\newcommand{\mathcolorbox}[2]{\colorbox{#1}{$\displaystyle #2$}}
 
 \DeclareMathOperator*{\argmin}{arg\,min}
 % Define a new command for a specific color
 \newcommand{\new}[1]{\textcolor{cherry}{#1}}
+\newcommand{\zhecheng}[1]{\textcolor{blue}{Zhecheng: #1}}
+\newcommand{\siyuan}[1]{\textcolor{red}{Siyuan: #1}}
+\newcommand{\jon}[1]{\textcolor{turquoise}{Jon: #1}}
+%\newcommand{\joncut}[1]{\textcolor{turquoise}{Jon: \sout{#1}}}
+\newcommand{\joncut}[2]{\textcolor{turquoise}{Jon: \sout{#1}{#2}}}
+\newcommand{\yixin}[1]{\textcolor{orange}{Yixin: #1}}
+\newcommand{\changyue}[1]{\textcolor{teal}{Changyue: #1}}
+\newcommand{\otman}[1]{\textcolor{purple}{Otman: #1}}
+\newcommand{\eitan}[1]{\textcolor{ForestGreen}{Eitan: #1}}
+\newcommand{\revision}[1]{\textcolor{cherry}{#1}}
+
 
 \definecolor{turquoise}{cmyk}{0.65,0,0.1,0.1}
 \definecolor{purple}{rgb}{0.65,0,0.65}
@@ -25,8 +39,15 @@
 \newcommand{\vect}[1]{\mathbf{#1}}
 
 \newcommand{\refsec}[1] {Section~\ref{#1}}
-\newcommand{\refeq}[1] {Eq.~(\ref{#1})}
-\newcommand{\reffig}[1] {Figure~\ref{#1}}
+\newcommand{\refeq}[1] {Equation~\ref{#1}}
+\newcommand{\reffig}[1] {Fig.~\ref{#1}}
 \newcommand{\refalg}[1] {Algorithm~\ref{#1}}
 \newcommand{\reftab}[1] {Table~\ref{#1}}
 \newcommand{\refapx}[1] {Appendix~\ref{#1}}
+
+\newcommand{\pca}{\textit{Principal Component Analysis}}
+\newcommand{\system}{\textit{Dynamic Mode Decomposition}}
+\newcommand{\systemabbr}{\textit{DMD}}
+\newcommand{\koopman}{Koopman operator}
+
+\newcommand{\citehere}{\textbf{\textcolor{red}{CITATION NEEDED}}}
